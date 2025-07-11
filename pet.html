@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet-Project</title>
     <link rel="stylesheet" href="pet.css" />
-    <script src="pet.js"></script>
   </head>
   <body>
     <div class="container">
@@ -13,7 +12,7 @@
       <div class="header">
         <div class="logo">
           <span>🐕</span>
-          <h1>Pet-Project</h1>
+          <h1>PetGuard</h1>
         </div>
         <div class="nav-buttons">
           <button class="btn btn-secondary" onclick="showLogin()">
@@ -36,6 +35,7 @@
             </div>
           </div>
           <ul style="list-style: none; padding-left: 0">
+            <li style="margin-bottom: 10px">📍 GPS 위치 추적</li>
             <li style="margin-bottom: 10px">📊 활동량 모니터링</li>
             <li style="margin-bottom: 10px">🎥 라이브 영상 스트리밍</li>
             <li style="margin-bottom: 10px">🔔 실시간 알림</li>
@@ -92,6 +92,11 @@
         <div class="dashboard-card stat-card">
           <span class="stat-number">85%</span>
           <div class="stat-label">배터리 잔량</div>
+        </div>
+
+        <div class="dashboard-card stat-card">
+          <span class="stat-number">38.0℃</span>
+          <div class="stat-label">체온</div>
         </div>
 
         <!-- 실시간 모니터링 -->
@@ -214,5 +219,6 @@
         </form>
       </div>
     </div>
+    <script src="pet.js"></script>
   </body>
 </html>
